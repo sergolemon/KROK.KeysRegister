@@ -17,19 +17,28 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{2A2068E6-2D9B-4EBA-A02A-1FCABC549A56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{D4D28132-A8DA-4B26-87C2-306493804DF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{D4D28132-A8DA-4B26-87C2-306493804DF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{40FF0E32-C1E9-4964-AD24-F1D7A3DBD770}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{40FF0E32-C1E9-4964-AD24-F1D7A3DBD770}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{BA44CBB5-062A-40E9-94A3-3A1F5720A486}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Persistence\Persistence.csproj", "{BA44CBB5-062A-40E9-94A3-3A1F5720A486}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{F2A98D66-6893-42E0-9BF1-47DB7FDDAB11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{F2A98D66-6893-42E0-9BF1-47DB7FDDAB11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{C408F210-A959-4CE0-A7A6-00186CD987A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{C408F210-A959-4CE0-A7A6-00186CD987A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manage.ClientMAUI", "Manage.ClientMAUI\Manage.ClientMAUI.csproj", "{75CE6FC3-C9B7-4469-A6F2-673C75D326A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Manage.ClientMAUI", "Manage.ClientMAUI\Manage.ClientMAUI.csproj", "{75CE6FC3-C9B7-4469-A6F2-673C75D326A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guard.ClientMAUI", "Guard.ClientMAUI\Guard.ClientMAUI.csproj", "{6B087FC7-5A1A-4227-B883-E3D08AB7346C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Guard.ClientMAUI", "Guard.ClientMAUI\Guard.ClientMAUI.csproj", "{6B087FC7-5A1A-4227-B883-E3D08AB7346C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientLib", "ClientLib\ClientLib.csproj", "{B921AF65-C5F4-477D-A329-AEE30BEDADE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{DD89A561-392D-447B-A971-74E39520241C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{22EEA512-8BD1-40E5-901F-F0FE5E484309}"
+	ProjectSection(SolutionItems) = preProject
+		migration.bat = migration.bat
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +78,10 @@ Global
 		{6B087FC7-5A1A-4227-B883-E3D08AB7346C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B087FC7-5A1A-4227-B883-E3D08AB7346C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6B087FC7-5A1A-4227-B883-E3D08AB7346C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B921AF65-C5F4-477D-A329-AEE30BEDADE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B921AF65-C5F4-477D-A329-AEE30BEDADE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B921AF65-C5F4-477D-A329-AEE30BEDADE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B921AF65-C5F4-477D-A329-AEE30BEDADE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,6 +100,8 @@ Global
 		{C408F210-A959-4CE0-A7A6-00186CD987A1} = {6BA0AE32-E7CF-4265-9C3F-16BF299354FD}
 		{75CE6FC3-C9B7-4469-A6F2-673C75D326A5} = {2DE0DCC4-DA62-4FC2-A237-82002BB76755}
 		{6B087FC7-5A1A-4227-B883-E3D08AB7346C} = {2DE0DCC4-DA62-4FC2-A237-82002BB76755}
+		{B921AF65-C5F4-477D-A329-AEE30BEDADE0} = {2DE0DCC4-DA62-4FC2-A237-82002BB76755}
+		{DD89A561-392D-447B-A971-74E39520241C} = {968FA5D3-F164-4D29-A7B9-7FB134B8FB71}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D2EC6FF1-DE85-4888-82FC-8B4128476B6A}
