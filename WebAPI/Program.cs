@@ -6,6 +6,8 @@ builder.Services.AddServices(builder.Configuration);
 
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
+app.CreateDatabaseIfNotExists();
+
+app.UseMiddleware();
 
 app.Run();

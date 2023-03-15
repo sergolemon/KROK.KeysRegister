@@ -18,7 +18,7 @@ namespace Persistence.Extensions
                 throw new Exception("Connection string \"MsSql\" was not set to appsettings.json.");
 
             services.AddDbContext<EfAppDbContext>(cfg => cfg.UseSqlServer(connectionString, 
-                opts => opts.MigrationsAssembly(typeof(EfAppDbContext).Assembly.FullName)));
+                opts => opts.MigrationsAssembly(typeof(EfAppDbContext).Assembly.GetName().Name)));
 
             return services;
         }

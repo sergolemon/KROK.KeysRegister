@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,18 +23,18 @@ namespace Persistence
         public DbSet<KeyEntity> Keys { get; set; }
         public DbSet<PermissionEntity> Permissions { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
-
-            base.OnModelCreating(modelBuilder);
+            base.OnModelCreating(builder);
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder dbContextOptionsBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
+            
 
-
-            base.OnConfiguring(dbContextOptionsBuilder);
+            base.OnConfiguring(builder);
         }
     }
 }
